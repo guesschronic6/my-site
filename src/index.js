@@ -4,11 +4,13 @@ import "./index.css";
 import "./App.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import IndexPage from "./components/index/index-page";
+import IndexNav from "./components/index/index-nav";
+import "./components/index/index-page.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <IndexPage />
+    <div className="main-background"></div>
+    <IndexNav />
   </React.StrictMode>,
   document.getElementById("root")
 );
