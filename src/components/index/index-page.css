@@ -3,12 +3,19 @@
   width: 350px;
 }
 
-.index-nav-container {
+.index-main-container {
   position: absolute;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  gap: 20px;
+}
+
+.index-nav-container {
+  position: relative;
 }
 
 .index-nav-container a {
@@ -37,11 +44,21 @@
 }
 
 #me-link {
-  bottom: 10%;
+  bottom: 5%;
   right: 5%;
 }
 
 #achievements-link {
   top: 37%;
   right: -25%;
+}
+
+#nav-time {
+  font-weight: 100;
+  letter-spacing: 0.2em;
+}
+
+.index-sub-container {
+  display: flex;
+  align-items: center;
 }
